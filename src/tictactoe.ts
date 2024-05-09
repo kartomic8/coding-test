@@ -14,13 +14,13 @@ export const checkBoard = (state:string): string => {
     const board = state.toLowerCase().split(",");
   
     // Invalid Characters
-    let error = false;
+    let containsInvalidChars = false;
     board.forEach( c => {
         if(c !== "x" && c !== "o" && c !== ""){
-            error = true;
+            containsInvalidChars = true;
         }
     });
-    if(error) 
+    if(containsInvalidChars) 
         return Results.Error;
 
     // Calculate number of turns
