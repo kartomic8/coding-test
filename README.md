@@ -8,7 +8,7 @@
 
 1. Clone this repo
 1. Install the dependencies `npm install`
-1. Run the tests: `npm run tests`
+1. Run the tests: `npm run test`
 
 ## Solution Explanation
 
