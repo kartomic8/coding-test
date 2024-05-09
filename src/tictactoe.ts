@@ -12,6 +12,9 @@ const ConfigsToCheck = [
 
 export const checkBoard = (state:string): string => {
     const board = state.toLowerCase().split(",");
+
+    if (board.length > 9) 
+        return Results.Error;
   
     // Invalid Characters
     let containsInvalidChars = false;
@@ -58,6 +61,6 @@ export const checkBoard = (state:string): string => {
     if (xWinCount ===0 && oWinCount ===0 && (xCount + oCount) === 9)
         return Results.Tie;
 
-    // All invalid states covered, return winner
+    // All invalid states covered (i hope), return winner
     return xWinCount > 0 ? Results.XWinner : Results.OWinner;
 }

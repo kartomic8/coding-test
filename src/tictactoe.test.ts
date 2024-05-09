@@ -37,4 +37,8 @@ describe("checkBoard", () => {
     it("should reject a winnner when turns are invalid", () => {
         expect(checkBoard("o,o,o,x,,,,,")).toBe(Results.Error);
     })
+
+    it("should reject a board with too many entries", () => {
+        expect(checkBoard("x,x,x,x,x,x,x,x,x,x")).toBe(Results.Error);    
+    });
 });
