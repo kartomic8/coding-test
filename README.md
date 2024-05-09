@@ -12,4 +12,4 @@
 
 ## Solution Explanation
 
-This is a solution to the tic-tac-toe problem presented during our interview. The solution is implemented in TypeScript, although only a couple of type annotations are used with unit tests implemented using the vitest framework.
+This is a solution to the tic-tac-toe problem presented during our interview. The solution is implemented in TypeScript, even though it does not make heavy use of types. Unit tests have been implemented using the vitest framework.

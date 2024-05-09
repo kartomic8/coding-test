@@ -2,7 +2,7 @@
   "name": "coding-test",
   "version": "1.0.0",
   "description": "",
-  "main": "tictactoe.js",
+  "main": "src/tictactoe.ts",
   "scripts": {
     "test": "vitest"
   },
