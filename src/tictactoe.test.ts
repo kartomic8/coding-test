@@ -41,4 +41,8 @@ describe("checkBoard", () => {
     it("should reject a board with too many entries", () => {
         expect(checkBoard("x,x,x,x,x,x,x,x,x,x")).toBe(Results.Error);    
     });
+
+    it ("should reject an empty board", () => {
+        expect(checkBoard(",,,,,,,,")).toBe(Results.Incomplete);
+    })
 });
